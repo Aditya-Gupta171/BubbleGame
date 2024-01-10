@@ -13,8 +13,8 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-     background-color: hsl(237, 82%, 52%);
-     background-image: linear-gradient(to right, hsl(237, 82%, 52%) , #ffffffd4);
+     background-color: yellowgreen;
+     background-image: linear-gradient(to right, yellow, #ffffffa5);
      display: flex;
      align-items: center;
      justify-content: center;
@@ -27,30 +27,52 @@ html,body{
     background-color: #fff;
 }
 #ptop{
-    padding: 0% 30%;
+    padding: 0px 30%;
     justify-content: space-between;
     align-items: center;
     display: flex;
+    color: #fff;
     height: 100px;
     width: 100%;
-    background-color: #4739afbe;
+    background-color: #bdbf47be;
 }
 .elem{
     display: flex;
    align-items: center;
    gap: 20px;
 }
+.elem h2{
+    font-weight: 500;
+    font-size: 22px;
+}
 .box{
-    color: #000;
+    color: #000000e7;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 22px;
     padding: 10px 20px;
     background-color: #fff;
     border-radius: 5px;
 }
 
-#pbtm{
-width: 100%;
-height: calc(100%-100px);
-background-color: #000;
+#pbtm {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    height:calc(100% - 100px);
+}
+.bubble{display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #edce04;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: #e6cb34;
 }
