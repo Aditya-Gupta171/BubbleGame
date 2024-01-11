@@ -61,18 +61,20 @@ html,body{
     padding: 20px;
     width: 100%;
     height:calc(100% - 100px);
+    justify-content: center;
+    align-items: center;
 }
 .bubble{display: flex;
     justify-content: center;
     align-items: center;
     width: 60px;
     height: 60px;
-    background-color: #edce04;
+    background-color: #3c2ff4be;
     color: #fff;
     border-radius: 50%;
     font-weight: 500;
 }
 .bubble:hover{
     cursor: pointer;
-    background-color: #bdbf47be;
+    background-color: #e51111;
 }
