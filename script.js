@@ -1,3 +1,5 @@
+var timer=60;
+var score=0;
 function bubblebanao(){
     var pichlavalue="";
 
@@ -7,8 +9,6 @@ for(var i=1;i<=102;i++){
 }
 document.querySelector("#pbtm").innerHTML=pichlavalue;
 }
-
-var timer=4;
 function runtimer(){
   var timerint = setInterval(function(){
         if(timer>0){
@@ -19,6 +19,13 @@ function runtimer(){
             clearInterval(timerint);
         }
     },1000);}
-
+ function getnewhit(){
+    var hitrunner=Math.floor(Math.random()*10);
+    document.querySelector("#hitvalue").textContent=hitrunner;
+ }
+function increasescore(){
+    
+}
 bubblebanao();
 runtimer();
+getnewhit();
